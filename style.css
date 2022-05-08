@@ -1,0 +1,116 @@
+
+body {
+/*  background-position: center;*/
+  font-family: 'Inconsolata', monospace;
+  font-weight: 300;
+  line-height: 1.5;
+  cursor: url("img/i100_bw1.png") 40 20, default; 
+}
+
+p {
+  color: ivory;
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');*/
+h1 {
+  /*for big bg texts*/
+  font-size: 42px;
+  font-weight: 200;
+  line-height: 1.2;
+}
+
+.container {
+  /* container for the entire page*/
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  /* container for texts on the right
+    fades out on mouse over*/
+  position: absolute;
+  text-align: left;
+  bottom: 24%;
+  right: 8%;
+  width: 17%;
+  height: 40%;
+  z-index: 3;
+
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.text:hover{opacity: 0;}
+
+.bg_text {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wokeup_text {
+  position: absolute;
+  width: 30%;
+  height: 40%;
+  z-index: 3;
+
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.wokeup_text:hover{opacity: 0;}
+
+.clickable {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  cursor: url("img/i100_pointer.png") 40 20, pointer;
+  z-index: 4;
+}
+
+.sqr_white {  
+  /*for testing link position. child of clickable*/
+  width: 37px;
+  height: 37px;
+  background: gainsboro;
+}
+
+.frame {
+  /*meat frame*/
+  position: absolute;
+  max-width: 90vw;
+  max-height: 90vh;
+  z-index: 2;
+}
+
+.inner {
+  /*image at the centre*/
+  position: absolute;
+  max-width: 66vw;
+  max-height: 66vh;
+  z-index: 1;
+}
+
+.chain_left {
+  position: absolute;
+  max-width: 80vw;
+  max-height: 100vh;
+  left: 7%;
+}
+
+.chain_right {
+  position: absolute;
+  max-width: 80vw;
+  max-height: 100vh;
+  right: 7%;
+}
+
+
+
+
+
+
