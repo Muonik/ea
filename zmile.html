@@ -5,10 +5,7 @@
 	<link rel="stylesheet" href="style.css">
 	<style>
 		body {
-			/*background-image: url("img/embossed_h.jpeg");*/
-			background-image: url("img/zmile_streched.png");
-			background-size: 100% auto;
-			background-repeat: repeat-y;
+			background-image: none;
 		}
 		p {
 			color: red;
@@ -20,30 +17,33 @@
 
 <body>
 	<div class="container">	
+		<!-- dynamic bg image -->
+		<img src="img/zmile_blink.png" id="change-img" style="">
  		<img class="inner" id="innerImg" src="img/zmile.jpeg">
 
 
  		<a href="bunny.html">
  			<!-- left eye -->
- 			<div class="clickable" style="top: 30%; left: 42%;">
- 				<div class="sqr_white"></div>
+ 			<div class="clickable" style="top: 28%; left: 37%;">
+ 				<img src="img/eye1.png" style="width:160px">
+ 				<!-- <div class="sqr_white"></div> -->
  			</div>
 
  			<!-- right eye -->
  			<div class="clickable" style="top: 30%; right: 38%;">
- 				<div class="sqr_white"></div>
+ 				<!-- <div class="sqr_white"></div> -->
  			</div>
  		</a>
 
  		<a href="scream.html">
  			<!-- left hand -->
 	 		<div class="clickable" style="bottom: 25%; left: 38%;">
-	 			<div class="sqr_white"></div>
+	 			<h4>no</h4>
 	 		</div>
 
 	 		<!-- right hand -->
-	 		<div class="clickable" style="bottom: 25%; right: 39%;">
-	 			<div class="sqr_white"></div>
+	 		<div class="clickable" style="bottom: 25%; right: 37%;">
+	 			<h4>no</h4>
 	 		</div>
  		</a>
 
@@ -53,7 +53,21 @@
 			<p>it welcomed me with open arms, enveloping me in a white flame. all of it is transmitted to me through bone conduction, through cellular telepathy, through viral infection, through parasitic possession, through screams, through whispers.</p>
 		</div>
 
-		<div class="clickable"></div>
+		<script>
+			let images = ["img/zmile_blink.png", "img/zmile_l.png"];
+
+			let index = 0;
+			let imgElement = document.getElementById("change-img");
+
+			function change() {
+			   imgElement.src = images[index];
+			   index >= (images.length - 1) ? index = 0 : index++;
+			}
+
+			window.onload = function () {
+	    		setInterval(change, 420);
+			};
+		</script>
 
 
 	</div>
