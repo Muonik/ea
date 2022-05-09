@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&display=swap');
 
 body {
 /*  background-position: center;*/
   font-family: 'Inconsolata', monospace;
-  font-weight: 300;
-  line-height: 1.5;
+  font-weight: 400;
+  line-height: 1.8;
   cursor: url("img/i100_bw1.png") 40 20, default; 
 }
 
@@ -11,12 +12,16 @@ p {
   color: ivory;
 }
 
-/*@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');*/
 h1 {
   /*for big bg texts*/
   font-size: 42px;
   font-weight: 200;
   line-height: 1.2;
+}
+
+h4 {
+  /*used for hyperlinked texts towwards the end*/
+  color: crimson;
 }
 
 .container {
@@ -50,7 +55,14 @@ h1 {
   position: absolute;
   width: 100vw;
   height: 100vh;
+  top: -7%;
 }
+
+/*@keyframes typing {
+  from {width: 0}
+  to {width: 100%;}
+}
+*/
 
 .wokeup_text {
   position: absolute;
@@ -66,16 +78,16 @@ h1 {
 
 .clickable {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   cursor: url("img/i100_pointer.png") 40 20, pointer;
   z-index: 4;
 }
 
 .sqr_white {  
   /*for testing link position. child of clickable*/
-  width: 37px;
-  height: 37px;
+  width: 50px;
+  height: 50px;
   background: gainsboro;
 }
 
@@ -100,6 +112,8 @@ h1 {
   max-width: 80vw;
   max-height: 100vh;
   left: 7%;
+
+  animation: moving_l 3.3s linear infinite alternate;
 }
 
 .chain_right {
@@ -107,9 +121,19 @@ h1 {
   max-width: 80vw;
   max-height: 100vh;
   right: 7%;
+
+  animation: moving_r 3.3s linear infinite alternate;
 }
 
+@keyframes moving_l {
+    0% {left: 0;}
+    100% {left: 33%;}
+}
 
+@keyframes moving_r {
+    0% {right: 0;}
+    100% {right: 33%;}
+}
 
 
 
