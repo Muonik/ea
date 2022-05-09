@@ -9,9 +9,14 @@
 			background-color: black;
 		}
 		p {
+			font-size: large;
 			color: red;
 			font-weight: bold;
+			line-height: 1.9;
 			text-shadow: black 2px 2px;
+		}
+		h4 {
+			font-weight: bold;
 		}
 	</style>
 </head>
@@ -20,20 +25,20 @@
 	<div class="container">	
 		<!-- dynamic bg image -->
 		<img src="img/zmile_blink.png" id="change-img">
- 		<img class="inner" id="innerImg" src="img/zmile.jpeg">
+ 		<img class="inner" id="innerImg" src="img/zmile.png">
 
 
  		<a href="bunny.html">
  			<!-- left eye -->
- 			<div class="clickable" style="top: 28%; left: 37%;">
- 				<img src="img/eye1.png" style="width:160px">
+ 			<div class="clickable" style="top: 29%; left: 42%;">
+ 				<!-- <img src="img/eye1.png" style="width:160px"> -->
  				<!-- <div class="sqr_white"></div> -->
  			</div>
 
  			<!-- right eye -->
- 			<div class="clickable" style="top: 30%; right: 38%;">
- 				<!-- <div class="sqr_white"></div> -->
- 			</div>
+<!--  		<div class="clickable" style="top: 30%; right: 38%;">
+ 				 <div class="sqr_white"></div>
+ 			</div> -->
  		</a>
 
  		<a href="scream.html">
@@ -43,15 +48,15 @@
 	 		</div>
 
 	 		<!-- right hand -->
-	 		<div class="clickable" style="bottom: 25%; right: 37%;">
+	 		<div class="clickable" style="bottom: 26%; right: 37%;">
 	 			<h4>no</h4>
 	 		</div>
  		</a>
 
  		
 
-		<div class="text">
-			<p>it welcomes me with open arms, enveloping me in a white flame. all of it is transmitted to me through bone conduction, through cellular telepathy, through viral infection, through parasitic possession, through screams, through whispers.</p>
+		<div class="text" style="width: 50%; height: 20%; top: 5%; left:25%;">
+			<p id="typingg"></p>
 		</div>
 
 		<script>
@@ -70,6 +75,11 @@
 			{
 	    		setInterval(change, 420);
 			};
+		</script>
+
+		<script src="js/typing.js"></script>
+		<script>
+			typeChar();
 		</script>
 
 
