@@ -4,7 +4,7 @@ body {
 /*  background-position: center;*/
   font-family: 'Inconsolata', monospace;
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.7;
   cursor: url("img/i100_bw1.png") 40 20, default; 
 }
 
@@ -22,6 +22,7 @@ h1 {
 h4 {
   /*used for hyperlinked texts towwards the end*/
   color: crimson;
+  font-weight: 400;
 }
 
 .container {
@@ -69,6 +70,7 @@ h4 {
   width: 30%;
   height: 40%;
   z-index: 3;
+  display: none;
 
   opacity: 1;
   transition: 0.3s;
@@ -126,15 +128,22 @@ h4 {
 }
 
 @keyframes moving_l {
-    0% {left: 0;}
-    100% {left: 33%;}
+    0%    {left: 0;}
+    100%  {left: 33%;}
 }
 
 @keyframes moving_r {
-    0% {right: 0;}
-    100% {right: 33%;}
+    0%    {right: 0;}
+    100%  {right: 33%;}
 }
 
+#bunny_mouf {
+  animation: bouncing 0.8s linear infinite alternate;
+}
 
+@keyframes bouncing {
+  0%    {top: 35%;}
+  100%  {top: 38%;}
+}
 
 

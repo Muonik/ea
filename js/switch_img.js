@@ -1,4 +1,4 @@
-//not in use rn. keeping it here as a template
+//keeping it here as a template
 let images = []
 let index = 0;
 let imgElement = document.getElementById("change-img");
