@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500&display=swap');
 
 body {
 /*  background-position: center;*/
   font-family: 'Inconsolata', monospace;
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.7;
   cursor: url("img/i100_bw1.png") 40 20, default; 
 }
 
@@ -22,6 +22,7 @@ h1 {
 h4 {
   /*used for hyperlinked texts towwards the end*/
   color: crimson;
+  font-weight: 400;
 }
 
 .container {
@@ -69,6 +70,7 @@ h4 {
   width: 30%;
   height: 40%;
   z-index: 3;
+  display: none;
 
   opacity: 1;
   transition: 0.3s;
@@ -78,16 +80,16 @@ h4 {
 
 .clickable {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   cursor: url("img/i100_pointer.png") 40 20, pointer;
   z-index: 4;
 }
 
 .sqr_white {  
   /*for testing link position. child of clickable*/
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background: gainsboro;
 }
 
@@ -126,15 +128,22 @@ h4 {
 }
 
 @keyframes moving_l {
-    0% {left: 0;}
-    100% {left: 33%;}
+    0%    {left: 0;}
+    100%  {left: 33%;}
 }
 
 @keyframes moving_r {
-    0% {right: 0;}
-    100% {right: 33%;}
+    0%    {right: 0;}
+    100%  {right: 33%;}
 }
 
+#bunny_mouf {
+  animation: bouncing 1.3s linear infinite alternate;
+}
 
+@keyframes bouncing {
+  0%    {top: 35%;}
+  100%  {top: 38%;}
+}
 
 

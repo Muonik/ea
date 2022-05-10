@@ -20,14 +20,14 @@
  -->	<img class="inner" id="change-img" src="img/shrink1.png">
 
  		<a href="zmile.html">
- 			<div class="clickable" style="top:47%; right: 50%;">
- 				<div class="sqr_white"></div>
+ 			<div class="clickable" style="top:46%; right: 50%;">
+ 				<!-- <div class="sqr_white"></div> -->
  			</div>
  		</a>
 
 
-		<div class="text" style="width: 60%; height: 20%; top: 9%; left:21%;">
-			<p>a searing light corrodes the curtain, doors open one after another. a myriad of wells emerge in the sky. i smell burnt plastic. a thick fog fills my vision, a crushing embrace yet so weightless. i am melting away, exuding cellulose vapour, turning into a network of nerves, becoming imperceptible.</p>
+		<div class="text" style="width: 50%; height: 20%; top: 9%; left:25%;">
+			<p>a searing light corrodes the screen, doors open one after another. a myriad of wells emerge in the sky. i smell burnt plastic. memory  holes fill my vision, a crushing embrace yet so weightless. i am melting away, exuding cellulose null pointers, turning into a network of nerves.</p>
 		</div>
 
 		<script>
@@ -35,12 +35,14 @@
 			let index = 0;
 			let imgElement = document.getElementById("change-img");
 
-			function change() {
+			function change() 
+			{
 			   imgElement.src = images[index];
 			   index >= (images.length - 1) ? index = 0 : index++;
 			}
 
-			window.onload = function () {
+			window.onload = function () 
+			{
 			    setInterval(change, 333);
 			};
 		</script>
