@@ -80,17 +80,18 @@ h4 {
 
 .clickable {
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 150px;
+  height: 150px;
   cursor: url("img/i100_pointer.png") 40 20, pointer;
   z-index: 4;
 }
 
 .sqr_white {  
   /*for testing link position. child of clickable*/
-  width: 60px;
-  height: 60px;
-  background: gainsboro;
+  width: 150px;
+  height: 150px;
+  background: white;
+  opacity: 0.5;
 }
 
 .frame {
