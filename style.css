@@ -80,16 +80,16 @@ h4 {
 
 .clickable {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   cursor: url("img/i100_pointer.png") 40 20, pointer;
   z-index: 4;
 }
 
 .sqr_white {  
   /*for testing link position. child of clickable*/
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background: gainsboro;
 }
 
@@ -138,7 +138,7 @@ h4 {
 }
 
 #bunny_mouf {
-  animation: bouncing 0.8s linear infinite alternate;
+  animation: bouncing 1.3s linear infinite alternate;
 }
 
 @keyframes bouncing {
