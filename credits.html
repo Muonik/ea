@@ -10,6 +10,7 @@
 			p {
 				color: gainsboro;
 			}
+			a.txt {color: silver;}
 			h4 {color: crimson;}
 			img {
 				/* ouroboros*/
@@ -20,20 +21,40 @@
 	</head>
 	<body>
 		<div class="container">
-			<p style="position: absolute; bottom:33%;">
+			<p style="position: absolute; bottom:27%;">
 				credits<br><br>
 				art by ea<br>
-				texts by gpt-3 and me<br>
-				design, programming, and additional art by me<br>
-				work in progress<br>
+				texts by <a href="https://beta.openai.com/docs/introduction" target="_blank" class="txt">gpt-3</a> and me (<a href="https://www.instagram.com/muoncore/" target="_blank" class="txt">@muoncore</a>) <br>
+				design, programming & additional art by me<br>
+				<br>
+<!-- 				<br>
+				github <a href="https://github.com/Muonik/ea/tree/gh-pages" target="_blank" class="txt">repo</a> for this project<br>
+				&#9874; work in progress &#9874;<br> -->
 			</p>
 
 			<a href="index.html">
-				<div class="clickable" style="width: 400px; left: 45%; top:22%;">
-					<img src="img/ouroboros_r.png">
+				<div class="clickable" style="width: 400px; left: 45%; top:20%;">
+					<img src="img/ouroboros_r.png" id="change-img">
 					<!-- <h4>new life</h4> -->		
 				</div>
-			</a>	
+			</a>
+
+			<script>
+			let index = 0;
+			let imgElement = document.getElementById("change-img");
+			let images = ["img/ouroboros_ r1.png", "img/ouroboros_r.png"]
+
+			function change() 
+			{
+			   imgElement.src = images[index];
+			   index >= (images.length - 1) ? index = 0 : index++;
+			}
+
+			window.onload = function () 
+			{
+			    setInterval(change, 420);
+			};				
+		</script>	
 			
 		</div>
 	</body>
